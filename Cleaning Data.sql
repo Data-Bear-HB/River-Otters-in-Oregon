@@ -27,3 +27,4 @@ SET season_year =
         WHEN EXTRACT(MONTH FROM observed_on) IN (9, 10, 11) THEN 
             'Fall ' || EXTRACT(YEAR FROM observed_on)
     END;
+
