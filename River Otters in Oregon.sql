@@ -3,7 +3,7 @@
 
 Note: These are my initial findings with not-fully-cleaned data. Once the data cleaning is done, I will re-calculate with statisical significance. 
 
-1. What general areas in Oregon have the most sighting?
+1. What *general areas* in Oregon have the most sighting?
 
 SELECT general_location, COUNT(*) AS count
 FROM otter_data
@@ -12,7 +12,8 @@ GROUP BY general_location
 ORDER BY count DESC
 LIMIT 3;
 
-Answer: (Format is general_location, count of records)
+**Answer: (Format is general_location, count of records)**
+  
   'Lewis and Clark Park near Warrenton Astoria',  18
   'Warrenton/Astoria',  13
   'Deschutes County Smith Rock', 12
@@ -31,11 +32,11 @@ Data output:
 "Summer,"	129
 "Winter,"	126
 
-  Answer: Fall is a clear outlier with a much higher number of observations.
+  **Answer: Fall is a clear outlier with a much higher number of observations.**
   
-3. What year had the highest amount of river otter observations?
+3. What *year* had the highest amount of river otter observations?
 
-4. Questions: What season had the highest number of records/observations?
+4. Questions: What *season* had the highest number of records/observations?
   
  SELECT season_year, COUNT(*) AS count
 FROM otter_data
@@ -43,7 +44,7 @@ GROUP BY season_year
 ORDER BY count DESC
   LIMIT 5;
 
-Answer: the top 5 number of records for each recorded season are:
+**Answer: the top 5 number of records for each recorded season are:**
 
 "Fall, 2022"	40
 "Spring, 2023"	38
