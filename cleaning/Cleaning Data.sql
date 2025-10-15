@@ -1,14 +1,14 @@
-# The Goal of cleaning data in this project is to create a dashboard that answers the questions of otter sightings
+# The goal of cleaning data in this project is to create a dashboard that answers the questions of otter sightings:
 -by year (2014-2024)
 -by season (Spring, Summer, Fall, Winter)
 -by place (group by area hubs, county, city, coastal area, etc)
 
-# 1. Make an easy to query column for location
-
+# 1. Make a query accessible column for location: 
+  
   ALTER TABLE otter_data
 ADD COLUMN general_location VARCHAR(255);
 
-# 2. Make an easy to search column that includes season, year
+# 2. Make a query accessible column that includes season and year:
 
 ALTER TABLE otter_data
 ADD COLUMN season_year VARCHAR(50)
