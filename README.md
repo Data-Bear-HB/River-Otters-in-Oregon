@@ -25,35 +25,39 @@ The records in [this otter database](data/cleaned) each have an image url, simil
 -Create a dashboard and easy charts to give helpful insights.
 
 
-2. **Project Findings**
+##**Project Findings**##
 
-   a.  **"Where in Oregon are the most sightings of river otters (or otter signs)?"**
+   a. **"Where in Oregon are the most sightings of river otters (or otter signs)?"**
 
    Answer: (Current answer)_The Warrenton Astoria Area ___
   
-  **"What time of year do most Oregon naturalists see river otters?"**
+  b. What time of year do most Oregon naturalists see river otters?"**
  
   Answer: Fall.
 
   NOTE: iNaturalist [*disclaimer*](https://www.inaturalist.org/taxa/41777-Lontra-canadensis) about the seasonal data: "Keep in mind that these are numbers of observations, so they are influenced both by when the organism can be observed and when people bother to observe them." **Therefore, we cannot conclude that more otters are more present at certain times of year.**
 
-(INSERT DASHBOARD LINK)
+c. (INSERT DASHBOARD LINK)
 
-b. Other insights: _______________
+d. Other insights: 
 
    -Observataions of otter tracks often took place in the strip of undeveloped land between two bodies of water (for instance between the Columbia River and Heron Lake on Sauvie Island)
    
    -the user who made the highest number of otter observation records was [BearTracker](https://www.inaturalist.org/people/beartracker), Kim Cabrera. ...hold for applause...
 
-   -Examination of otter scat photos (INSERT PHOTO HERE) show an abundant crayfish shells, indicating they are a dietary staple.
+   -Examination of otter scat photos (INSERT PHOTO HERE) show an abundant crayfish shells, indicating crayfish are a common river otter food.
 
-c. **Actionable information**: If you're looking to observe river otters, many were spotted in these areas:
+c. **Actionable information**: If you're looking to observe river otters in Oregon, many were spotted in these areas:
 
 Portland Area: Whitaker Ponds, Bybee Lake, Hayden Island, and ________(golf course pond)
 
 Coast Populations:
 
 Rivers with many sightings: Deschutes, Columbia
+
+Southern Oregon:
+
+Central and Eastern Oregon:
 
 
 
