@@ -10,10 +10,13 @@ This project was started to create more access for hobby naturalists to observe 
 
 b. Other insights: _______________
 
-c. Actionable information: Try spotting river otters near bodies of water in _____________ (specific parts of Oregon) with a higher likelihood of spotting otters during ________ (specific times of year). We know that otter populations (more than one otter) were observed in __________ (general location) in the past five years.
+c. Actionable information: If you're looking to observe river otters, I reccomend looking in bodies of water in _____________ (specific parts of Oregon) with a higher likelihood of spotting otters during ________ (specific times of year). We know that otter populations (more than one otter) were observed in __________ (general location) in the past five years.
 
 
 PROCESS: 
 
 First, I gathered raw data from iNaturalist, a collaborative database for sightings of specific species.
-Then I filtering for records with a photo (see image_url in Otter Database) so I could verify the sighting and easily compare for duplicate entries. I also filtered for dates between January 1st 2014 and January 1st 2024.
+Then I filtering for records with a photo (see image_url in Otter Database) so I could verify the sighting and easily compare for duplicate entries. 
+I filtered for dates between January 1st 2014 and January 1st 2024.
+Then I spent considerable effort cleaning the data for consistent dates, seasons, and locations.
+Finally, I created a dashboard and some charts to give helpful insights.
