@@ -35,7 +35,7 @@ The records in [this otter database](data/cleaned) each have an image url, simil
  
   Answer: Fall.
 
-  Note: iNaturalist [*disclaimer*](https://www.inaturalist.org/taxa/41777-Lontra-canadensis) about the seasonal data: "Keep in mind that these are numbers of observations, so they are influenced both by when the organism can be observed and when people bother to observe them." Therefore, we cannot conclude that more otters are more present at certain times of year.
+  NOTE: iNaturalist [*disclaimer*](https://www.inaturalist.org/taxa/41777-Lontra-canadensis) about the seasonal data: "Keep in mind that these are numbers of observations, so they are influenced both by when the organism can be observed and when people bother to observe them." **Therefore, we cannot conclude that more otters are more present at certain times of year.**
 
 b. Other insights: _______________
 
@@ -47,12 +47,11 @@ b. Other insights: _______________
 
 c. **Actionable information**: If you're looking to observe river otters, many were spotted in these areas:
 
-Portland: Whitaker Ponds, Bybee Lake, and ________(golf course pond)
+Portland Area: Whitaker Ponds, Bybee Lake, Hayden Island, and ________(golf course pond)
 
 Coast Populations:
 
-Rivers with many sightings: 
-
+Rivers with many sightings: Deschutes, Columbia
 
 
 
