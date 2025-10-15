@@ -27,18 +27,30 @@ The records in the otter database each had an attached image, similar to this ab
 
    a.  **"Where in Oregon are the most sightings of river otters (or otter signs)?"**
 
-   Answer: (Currently)_Warrenton Astoria ______________________
+   Answer: (Current answer)_Warrenton Astoria ___
   
   **"What time of year do most Oregon naturalists see river otters?"**
  
   Answer: Fall.
 
-b. Other insights: _______________Otter track observations often took place in the strip of undeveloped land between two bodies of water (for instance between the Columbia River and Heron Lake on Sauvie Island)
+  Note: iNaturalist also gives this [*disclaimer*](https://www.inaturalist.org/taxa/41777-Lontra-canadensis) about their seasonal data: "Keep in mind that these are numbers of observations, so they are influenced both by when the organism can be observed and when people bother to observe them." Therefore, we cannot conclude that more otters are present at certain times of year.
+
+b. Other insights: _______________
+
+   -Observataions of otter tracks often took place in the strip of undeveloped land between two bodies of water (for instance between the Columbia River and Heron Lake on Sauvie Island)
+   
+   -the user who made the highest number of otter observation records was [BearTracker] (https://www.inaturalist.org/people/beartracker), Kim Cabrera
+
+   -By observering photos of otter scat (part of the image data) it seems that otters eat a lot of crayfish because you can see their shells in the otter scat.
 
 c. Actionable information: If you're looking to observe river otters, I reccomend looking in bodies of water in
+
 Portland:
+
 Coast Populations:
+
 Rivers with many sightings:
-_____________ (specific parts of Oregon) with a higher likelihood of spotting otters during ________ (specific times of year). We know that otter populations (more than one otter) were observed in __________ (general location) in the past five years.
+
+(specific parts of Oregon) with a higher likelihood of spotting otters during ________ (specific times of year). We know that otter populations (more than one otter) were observed in __________ (general location) in the past five years.
 
 
