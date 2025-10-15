@@ -8,7 +8,7 @@ The records in [this otter database](data/cleaned) each have an image url, simil
 
 (ADD CHART VISUALIZATION HERE)
 
-**WHY**: River otters can be illusive and hard to spot so creating a dashboard of seasons and locations will increase the likelihood of a naturalist observing them and adding to community knowledge about this species.
+**WHY**: River otters can be illusive to spot in the wild so creating a dashboard of seasons and locations will increase the likelihood of a naturalist observing them and adding to community knowledge about this species.
 
 **DATA SOURCE**: The data in this project came from [iNaturalist](https://www.inaturalist.org/taxa/41777-Lontra-canadensis). It was  filtered for confirmed observations (with image urls) and locations occuring only in the state Oregon.
 
