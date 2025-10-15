@@ -41,7 +41,7 @@ b. Other insights: _______________
 
    -Observataions of otter tracks often took place in the strip of undeveloped land between two bodies of water (for instance between the Columbia River and Heron Lake on Sauvie Island)
    
-   -the user who made the highest number of otter observation records was [BearTracker] (https://www.inaturalist.org/people/beartracker), Kim Cabrera
+   -the user who made the highest number of otter observation records was [BearTracker](https://www.inaturalist.org/people/beartracker), Kim Cabrera
 
    -After observing several otter scat images (INSERT PHOTO HERE), it seems that otters eat a lot of crayfish because you can see their shells in the scat.
 
