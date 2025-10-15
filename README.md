@@ -49,7 +49,7 @@ d. Other insights:
 
 c. **Actionable information**: If you're looking to observe river otters in Oregon, many were spotted in these areas:
 
-Portland Area: Whitaker Ponds, Bybee Lake, Hayden Island, and ________(golf course pond)
+Portland Area: Whitaker Ponds, Bybee Lake, Hayden Island, and Force Lake (a pond in Heron Lakes Golf Course).
 
 Coast Populations:
 
