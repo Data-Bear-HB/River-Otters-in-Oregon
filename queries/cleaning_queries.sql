@@ -29,16 +29,5 @@ SET season_year =
             'Fall ' || EXTRACT(YEAR FROM observed_on)
     END;
 
-# Initial findings for "What are the top three seasons of which years have the most otter sightings?"
 
-SELECT season_year, COUNT(*)
-FROM otter_data
-GROUP BY season_year
-ORDER BY COUNT DESC
-  LIMIT 3;
-
-Output
-"Fall, 2022"	40
-"Spring, 2023"	38
-"Fall, 2021"	36
 
