@@ -1,9 +1,14 @@
-#RIVER OTTERS OF OREGON#
-##Using SQLPostGre, I will answer the following questions from a database gathered with iNaturalist verified observations of river otters in Oregon.
+#RIVER OTTERS OF OREGON ANALYSIS QUERIES#
+##
+-Using SQLPostGre 
+-iNaturalist data
+-verified observations of river otters 
+-in Oregon.
 
-Note: These are my initial findings with not-fully-cleaned data. Once the data cleaning is done, I will re-calculate with statisical significance. 
+Note: These are initial findings partially cleaned data. 
+Once the data cleaning is done, I will re-calculate with statisical significance. 
 
-1. What *general areas* in Oregon have the most sighting?
+# 1. What *general areas* in Oregon have the most sighting?
 
 SELECT general_location, COUNT(*) AS count
 FROM otter_data
@@ -18,9 +23,10 @@ Data output:
   'Warrenton/Astoria',  13
   'Deschutes County Smith Rock', 12
 
-  (INSERT HERE DASHBOARD FOR LOCATION CROSS REFERENCED WITH SEASON_YEAR)
+##  (INSERT HERE DASHBOARD FOR LOCATION CROSS REFERENCED WITH SEASON_YEAR) ##
 
-2. What time of year are the otters most likely to be observed?
+# 2. What time of year are the otters most likely to be observed?
+  
   SELECT 
     SPLIT_PART(season_year, ' ', 1) AS season, COUNT(*) AS count
 FROM otter_data
@@ -36,7 +42,7 @@ Data output:
   **Answer: Fall is a clear outlier with a much higher number of observations.**
 
 
-4. Questions: What *season* had the highest number of records/observations?
+# 4. Seasonality: What *season* had the highest number of records/observations?
   
  SELECT season_year, COUNT(*) AS count
 FROM otter_data
