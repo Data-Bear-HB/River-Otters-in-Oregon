@@ -12,12 +12,13 @@ GROUP BY general_location
 ORDER BY count DESC
 LIMIT 3;
 
-**Answer: (Format is general_location, count of records)**
+Data output:
   
   'Lewis and Clark Park near Warrenton Astoria',  18
   'Warrenton/Astoria',  13
   'Deschutes County Smith Rock', 12
-  
+
+  (INSERT HERE DASHBOARD FOR LOCATION CROSS REFERENCED WITH SEASON_YEAR)
 
 2. What time of year are the otters most likely to be observed?
   SELECT 
@@ -33,8 +34,7 @@ Data output:
 "Winter,"	126
 
   **Answer: Fall is a clear outlier with a much higher number of observations.**
-  
-3. What *year* had the highest amount of river otter observations?
+
 
 4. Questions: What *season* had the highest number of records/observations?
   
