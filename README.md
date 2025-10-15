@@ -2,13 +2,13 @@
 
 ![Otter photo](https://inaturalist-open-data.s3.amazonaws.com/photos/183828265/medium.jpg)
 
-The records in the otter database each had an attached image, similar to this above photo.
+The records in [this otter database](data/cleaned) each have an image url, similar to this above photo.
 
 **PROJECT OVERVIEW**: This project analyzes river otter sighting patterns in Oregon to help naturalists find otter populations more easily. Using [SQL data cleaning](queries/analysis_queries.sql) and visualization techniques, the analysis will inform a searchable dashboard where users can find the most likely viewing times and locations.
 
-**Why**: River otters can be illustive and hard to spot so creating a dashboard of seasons and locations will increase the likelihood of a naturalist observing them and adding to community knowledge about this species.
+**WHY**: River otters can be illusive and hard to spot so creating a dashboard of seasons and locations will increase the likelihood of a naturalist observing them and adding to community knowledge about this species.
 
-**Data Source**: The data in this project came from [iNaturalist](https://www.inaturalist.org/taxa/41777-Lontra-canadensis). It was  filtered for confirmed observations (with image urls) and locations occuring only in the state Oregon.
+**DATA SOURCE**: The data in this project came from [iNaturalist](https://www.inaturalist.org/taxa/41777-Lontra-canadensis). It was  filtered for confirmed observations (with image urls) and locations occuring only in the state Oregon.
 
 **PROCESS**: 
 
@@ -27,13 +27,13 @@ The records in the otter database each had an attached image, similar to this ab
 
    a.  **"Where in Oregon are the most sightings of river otters (or otter signs)?"**
 
-   Answer: (Current answer)_Warrenton Astoria ___
+   Answer: (Current answer)_The Warrenton Astoria Area ___
   
   **"What time of year do most Oregon naturalists see river otters?"**
  
   Answer: Fall.
 
-  Note: iNaturalist also gives this [*disclaimer*](https://www.inaturalist.org/taxa/41777-Lontra-canadensis) about their seasonal data: "Keep in mind that these are numbers of observations, so they are influenced both by when the organism can be observed and when people bother to observe them." Therefore, we cannot conclude that more otters are present at certain times of year.
+  Note: iNaturalist [*disclaimer*](https://www.inaturalist.org/taxa/41777-Lontra-canadensis) about the seasonal data: "Keep in mind that these are numbers of observations, so they are influenced both by when the organism can be observed and when people bother to observe them." Therefore, we cannot conclude that more otters are more present at certain times of year.
 
 b. Other insights: _______________
 
@@ -41,16 +41,16 @@ b. Other insights: _______________
    
    -the user who made the highest number of otter observation records was [BearTracker] (https://www.inaturalist.org/people/beartracker), Kim Cabrera
 
-   -By observering photos of otter scat (part of the image data) it seems that otters eat a lot of crayfish because you can see their shells in the otter scat.
+   -After observing several otter scat images (INSERT PHOTO HERE), it seems that otters eat a lot of crayfish because you can see their shells in the scat.
 
-c. Actionable information: If you're looking to observe river otters, I reccomend looking in bodies of water in
+c. **Actionable information**: If you're looking to observe river otters, many were spotted in these areas:
 
-Portland:
+Portland: Whitaker Ponds, Bybee Lake, and ________(golf course pond)
 
 Coast Populations:
 
-Rivers with many sightings:
+Rivers with many sightings: 
 
-(specific parts of Oregon) with a higher likelihood of spotting otters during ________ (specific times of year). We know that otter populations (more than one otter) were observed in __________ (general location) in the past five years.
+
 
 
