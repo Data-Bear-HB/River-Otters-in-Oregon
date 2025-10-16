@@ -23,6 +23,19 @@ Data output:
   'Warrenton/Astoria',  13
   'Deschutes County Smith Rock', 12
 
+From this I can see that multiple records in general_location mention "Warrenton" or "Astoria" so I created a new query that would encompass those words:
+
+  SELECT general_location
+FROM otter_data
+WHERE general_location IS NOT NULL
+AND general_location ILIKE '%warrenton%'
+OR general_location ILIKE '%astoria%';
+
+Output: 50 records for [Warrenton/Astoria](https://maps.app.goo.gl/xGbHNFW8ChW9577Q8). Currently highest number of records.
+
+  **Note**: These "twin cities" are essentially the same area of Oregon, on either side of where the Lewis and Clark River meets the Pacific Ocean.
+  
+
 ##  (INSERT HERE DASHBOARD FOR LOCATION CROSS REFERENCED WITH SEASON_YEAR) ##
 
 # 2. What time of year are the otters most likely to be observed?
