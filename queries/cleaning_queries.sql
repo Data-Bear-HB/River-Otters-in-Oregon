@@ -29,21 +29,58 @@ SET season_year =
             'Fall ' || EXTRACT(YEAR FROM observed_on)
     END;
 
-After a series of individual record look-ups of latitude and longitude (in google maps) to co-align place_guess with general_location, for example, many queries that looked like this:
+Next, I started looking for catagories of locations, for instance 'Whitaker Ponds' or 'Columbia River'. 
+
+SELECT place_guess, COUNT(*) AS count
+FROM otter_data
+WHERE place_guess IS NOT NULL
+GROUP BY place_guess
+ORDER BY count DESC;
   
-SELECT DISTINCT id, general_location, place_guess, latitude, longitude
+Through this query, I initially searched for what showed up many times in place_guess.
+  
+SELECT id, general_location, place_guess, latitude, longitude
 FROM otter_data
 WHERE place_guess ILIKE '%cully%';
 
-After confirming the location of each individual record with google maps (using the latitude and longitude), I updated the general_location to a simpler catagory, like 'Whitaker Ponds, Portland' or 'Sellwood Oaksbottom Portland'
+After confirming the location of each individual record with google maps (using the latitude and longitude), I updated the general_location to a simpler catagory, like 'Whitaker Ponds, Portland' or 'Sellwood Oaksbottom Portland' using this query:
 
 UPDATE otter_data 
 SET general_location = 'Whitaker Ponds, Portland'  
 WHERE id = '31642242' OR id = '47979780'  OR id = '69243000' OR id = '140937824';
 
-I included multipe 'tags' in the naming of these catagories so a user could search by 'Portland' or 'Pond'
+NOTES:
+  -I included multiple 'tags' in the naming of these catagories so a user could search by key words like 'Portland' or 'coast' or 'Slough'
+  -occasionally the record location wasn't close to anything else on the map so I had to catagorize by county.
 
 (INSERT HERE: LIST OF TAGS or general_location catagories: 
+'Ashland'
+'Brookings'
+'Broughton Beach Portland Airport'
+'Camp Westwind Otis'
+'Columbia River Hayden Island'
+'Columbia Sauvie Island near Sturgeon Lake'
+'Columbia Slough near Heron Lakes Golf Course'
+'Coos Bay'
+'Coos County Oregon Coast'
+'Curry Country Oregon Coast'
+'Curry County'
+'Dallas'
+'Depoe Bay'
+'Deschutes County'
+'Deschutes County Smith Rock'
+'Deschutes River meets Columbia River Wasco'
+'Devils Lake Lincoln City'
+'Diamond Lake Douglas County'
+'Douglas County'
+'Douglas County Umpqua River'
+'Dunes Siltcoos River' 
+'Elk Lake near Gold Butte'
+'Errol Heights Park Sellwood Johnson Creek'
+'Force lake Heron Lakes Golf Course' or 'Force Lake'
+
+
+  
 'Sellwood Oaksbottom Portland'
 
 After a few hundred records were updated using
