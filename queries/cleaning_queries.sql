@@ -52,8 +52,18 @@ WHERE id = '31642242' OR id = '47979780'  OR id = '69243000' OR id = '140937824'
 NOTES:
   -I included multiple 'tags' in the naming of these catagories so a user could search by key words like 'Portland' or 'coast' or 'Slough'
   -occasionally the record location wasn't close to anything else on the map so I had to catagorize by county.
+  -some of the entries have 'near' a landmark
 
-(INSERT HERE: LIST OF TAGS or general_location catagories: 
+Some examples of the general_location tags: 
+
+SELECT DISTINCT general_location
+FROM otter_data
+WHERE general_location IS NOT NULL
+ORDER BY general_location
+LIMIT 10;
+
+  
+LIST OF TAGS or general_location catagories: 
 'Ashland'
 'Brookings'
 'Broughton Beach Portland Airport'
@@ -61,30 +71,11 @@ NOTES:
 'Columbia River Hayden Island'
 'Columbia Sauvie Island near Sturgeon Lake'
 'Columbia Slough near Heron Lakes Golf Course'
-'Coos Bay'
-'Coos County Oregon Coast'
-'Curry Country Oregon Coast'
-'Curry County'
-'Dallas'
-'Depoe Bay'
-'Deschutes County'
-'Deschutes County Smith Rock'
-'Deschutes River meets Columbia River Wasco'
-'Devils Lake Lincoln City'
-'Diamond Lake Douglas County'
-'Douglas County'
-'Douglas County Umpqua River'
-'Dunes Siltcoos River' 
-'Elk Lake near Gold Butte'
-'Errol Heights Park Sellwood Johnson Creek'
-'Force lake Heron Lakes Golf Course' or 'Force Lake'
+'Commonwealth Lake Cedar Hills'
 
+After a few hundred records were updated using the above method,
+  I started using the larger scope of latitude and longitude to search for patterns in the records. 
 
-  
-'Sellwood Oaksbottom Portland'
-
-After a few hundred records were updated using
-  I started using the larger scope of latitude and longitude  within these two catagories to see what records I have missed that had too general of a place_guess note
   
 SELECT DISTINCT id, general_location, place_guess, latitude, longitude
 FROM otter_data
