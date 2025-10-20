@@ -29,5 +29,29 @@ SET season_year =
             'Fall ' || EXTRACT(YEAR FROM observed_on)
     END;
 
+After a series of individual record look-ups of latitude and longitude (in google maps) to co-align place_guess with general_location, for example, many queries that looked like this:
+  
+SELECT DISTINCT id, general_location, place_guess, latitude, longitude
+FROM otter_data
+WHERE place_guess ILIKE '%cully%';
 
+After confirming the location of each individual record with google maps (using the latitude and longitude), I updated the general_location to a simpler catagory, like 'Whitaker Ponds, Portland' or 'Sellwood Oaksbottom Portland'
+
+UPDATE otter_data 
+SET general_location = 'Whitaker Ponds, Portland'  
+WHERE id = '31642242' OR id = '47979780'  OR id = '69243000' OR id = '140937824';
+
+I included multipe 'tags' in the naming of these catagories so a user could search by 'Portland' or 'Pond'
+
+(INSERT HERE: LIST OF TAGS or general_location catagories: 
+'Sellwood Oaksbottom Portland'
+
+After a few hundred records were updated using
+  I started using the larger scope of latitude and longitude  within these two catagories to see what records I have missed that had too general of a place_guess note
+  
+SELECT DISTINCT id, general_location, place_guess, latitude, longitude
+FROM otter_data
+WHERE latitude BETWEEN 45.56 AND 46.0 
+AND longitude BETWEEN -122.7 AND -122.5
+ORDER BY longitude;
 
