@@ -3,13 +3,14 @@
 -by year (2014-2024)
 -by season (Spring, Summer, Fall, Winter)
 -by place (group by area hubs, county, city, coastal area, etc)
+-by time of day
 
-# Make a query accessible column for location: 
+# Make a new column for location: 
   
   ALTER TABLE otter_data
 ADD COLUMN general_location VARCHAR(255);
 
-# Make a query accessible column that includes season and year:
+# Make a new column to includes season and year:
 
 ALTER TABLE otter_data
 ADD COLUMN season_year VARCHAR(50)
@@ -29,7 +30,7 @@ SET season_year =
             'Fall ' || EXTRACT(YEAR FROM observed_on)
     END;
 
-Next, I started looking for catagories of locations, for instance 'Whitaker Ponds' or 'Columbia River'. 
+# look for groups of locations in place_guess 
 
 SELECT place_guess, COUNT(*) AS count
 FROM otter_data
@@ -37,25 +38,26 @@ WHERE place_guess IS NOT NULL
 GROUP BY place_guess
 ORDER BY count DESC;
   
-Through this query, I initially searched for what showed up many times in place_guess.
+# based on patterns that show up multiple times
   
 SELECT id, general_location, place_guess, latitude, longitude
 FROM otter_data
 WHERE place_guess ILIKE '%cully%';
 
-After confirming the location of each individual record with google maps (using the latitude and longitude), 
-  I updated the general_location to a simpler catagory, like 'Whitaker Ponds, Portland' or 'Sellwood Oaksbottom Portland' using this query:
+# to update a record, first confirm the location of each individual record with google maps (using the latitude and longitude)
+  
+# update the general_location to a simpler, more searchable catagory, like 'Whitaker Ponds, Portland' or 'Sellwood Oaksbottom Portland' using this query:
 
 UPDATE otter_data 
 SET general_location = 'Whitaker Ponds, Portland'  
 WHERE id = '31642242' OR id = '47979780'  OR id = '69243000' OR id = '140937824';
 
 NOTES:
-  -I included multiple 'tags' in the naming of these catagories so a user could search by key words like 'Portland' or 'coast' or 'Slough'
-  -occasionally the record location wasn't close to anything else on the map so I had to catagorize by county.
+  -include multiple 'tags' in the naming of these catagories so a user can search by key words like 'Portland' or 'coast' or 'Slough'
+  -sometimes the exact location is not close to anything else on the map so catagorize by county.
   -some of the entries have 'near' a landmark
 
-# check examples of general_location tags: 
+# examples of general_location tags: 
 
 SELECT DISTINCT general_location
 FROM otter_data
@@ -64,7 +66,7 @@ ORDER BY general_location
 LIMIT 10;
 
 After a few hundred records were updated using the above method,
-  I started using the larger scope of latitude and longitude to search for patterns in the records. 
+#  start using latitude and longitude to search for patterns in the records. 
 
   
 SELECT DISTINCT id, general_location, place_guess, latitude, longitude
@@ -82,13 +84,13 @@ AND longitude BETWEEN -122.7 AND -122.5
 AND general_location IS NULL
 ORDER BY latitude; 
   
-# updated general_location null values on close latitude or longitude
+# update general_location null values on close latitude or longitude
   
 UPDATE otter_data 
 SET general_location = 'Columbia Slough'  
 WHERE id = '127554925';
 
-  Verified location general_location to the following
+# Verified location general_location to the following
 
 Changed 'Portland Airport'  id: 101730628
 Changed  Id: 109107408 'columbia slough by smith and bybee lake'
@@ -149,24 +151,28 @@ Changed ID: 93112871 'Curry County'
 Changed  ID: 135146541 'Jackson Country'
 Changed   ID: 34369278  ID: 52632464 'Jackson Country Hyatt Reservoir'
 Changed ID: 173639740 ID: 110796191  ID: 40998850 ID: 66036660  ID: 36762603  ID: 34640440 ID: 35451653 'Ashland'
-Changed  ID: 1969201 ID: 259930834  Coos County Oregon Coast
-Changed ID: 41578891 ID: 34358030 ID: 38352235  Coos County
-Changed ID: 194908488 Dunes Siltcoos River
-Changed  ID: 136952796 ID: 59195480 ID: 63939990  Coos Bay
+Changed  ID: 1969201 ID: 259930834  'Coos County Oregon Coast'
+Changed ID: 41578891 ID: 34358030 ID: 38352235  'Coos County'
+Changed ID: 194908488 'Dunes Siltcoos River'
+Changed  ID: 136952796 ID: 59195480 ID: 63939990  'Coos Bay'
+Changed ID: 107051595 ID: 144869598 ID: 68968403 ID: 38039756  ID: 124071050  ID: 123180911  ID: 143394409  ID: 153479085  ID: 6365297 ID: 214078097 ID: 68968403 'Deschutes County'
+Changed  ID: 176435305 ID: 171782199 ID: 71043984 ID: 171782199 ID: 65569368 ID: 176435305 'Sunriver'
+Changed ID: 152531440 'Deschutes River meets Columbia River Wasco'
+Changed  ID: 120263708 ID: 29892899 ID: 190850259 ID: 184736637 ID: 124071050  ID: 130121659 ID: 171859632 ID: 246991535 ID: 171859634 ID: 16445210 ID: 54704939 ID: 15649456 'Deschutes County Smith Rock'
+Changed ID: 29365099 'Wikiup Reservoir Deschutes County'
+Changed ID: 180852008 ID: 82150453 ID: 254737742 'Black Butte Deschutes County'
+Changed ID: 13060258 ID: 18920259 ID: 14330433 ID: 66639593 ID: 42293793 ID: 57096803  ID: 177453327  ID: 80560662 ID: 56071700   Lincoln County Oregon Coast
+Changed ID: 16159493 Yachats Oregon Coast
+Changed  ID: 204305030 ID: 34050721 ID:12960303 ID: 129296033   Beaver Creek Lincoln Country Oregon Coast
 
-Changed: Deleted row ID: 259930834 because repeat record
-Changed general_location
-Changed ID: 107051595 ID: 144869598 ID: 68968403 ID: 38039756  ID: 124071050  ID: 123180911  ID: 143394409  ID: 153479085  ID: 6365297 ID: 214078097 ID: 68968403 Deschutes County
-Changed  ID: 176435305 ID: 171782199 ID: 71043984 ID: 171782199 ID: 65569368 ID: 176435305 Sunriver
-Changed ID: 152531440 Deschutes River meets Columbia River Wasco
-Changed  ID: 120263708 ID: 29892899 ID: 190850259 ID: 184736637 ID: 124071050  ID: 130121659 ID: 171859632 ID: 246991535 ID: 171859634 ID: 16445210 ID: 54704939 ID: 15649456 Deschutes County Smith Rock
-Changed ID: 29365099 Wikiup Reservoir Deschutes County
 
   
 # Found and deleted a few repeat entries:
 -Deleted one record (id 152442844) because it was a repeat
 -Deleted one record (id: 97100855) because incorrect location/ location could not be verified.
 -Deleted record (id: 29011942) because it was in Washington State.
+-Deleted record (id: 259930834) because repeat record
+
 
 DELETE FROM otter_data 
   WHERE id = 29011942 OR id = 97100855 OR id = 152442844
