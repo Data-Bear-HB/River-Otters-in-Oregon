@@ -82,4 +82,9 @@ FROM otter_data
 WHERE latitude BETWEEN 45.56 AND 46.0 
 AND longitude BETWEEN -122.7 AND -122.5
 ORDER BY longitude;
+  
+# Found and deleted a few repeat entries:
+-Deleted one row (id 152442844 because it was a repeat
+-Deleted one row (id: 97100855) because incorrect location/ location could not be verified.
+
 
