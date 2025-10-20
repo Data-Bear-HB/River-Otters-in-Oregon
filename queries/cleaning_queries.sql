@@ -82,9 +82,19 @@ FROM otter_data
 WHERE latitude BETWEEN 45.56 AND 46.0 
 AND longitude BETWEEN -122.7 AND -122.5
 ORDER BY longitude;
+
+# Recognized null values for general_location and updated based on close latitude or longitude
+UPDATE otter_data 
+SET general_location = 'Columbia Slough'  
+WHERE id = '127554925';
+
   
 # Found and deleted a few repeat entries:
--Deleted one row (id 152442844 because it was a repeat
--Deleted one row (id: 97100855) because incorrect location/ location could not be verified.
+-Deleted one record (id 152442844) because it was a repeat
+-Deleted one record (id: 97100855) because incorrect location/ location could not be verified.
+-Deleted record (id: 29011942) because it was in Washington State.
+
+DELETE FROM otter_data 
+  WHERE id = 97100855
 
 
