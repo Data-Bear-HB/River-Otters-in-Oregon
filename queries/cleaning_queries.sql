@@ -157,9 +157,9 @@ Changed ID: 41578891 ID: 34358030 ID: 38352235  'Coos County'
 Changed ID: 194908488 'Dunes Siltcoos River'
 Changed  ID: 136952796 ID: 59195480 ID: 63939990  'Coos Bay'
 Changed ID: 107051595 ID: 144869598 ID: 68968403 ID: 38039756  ID: 124071050  ID: 123180911  ID: 143394409  ID: 153479085  ID: 6365297 ID: 214078097 ID: 68968403 'Deschutes County'
-Changed  ID: 176435305 ID: 171782199 ID: 71043984 ID: 171782199 ID: 65569368 ID: 176435305 'Sunriver'
+Changed  ID: 176435305 ID: 171782199 ID: 71043984 ID: 171782199 ID: 65569368 ID: 176435305 id: 169437205 'Sunriver'
 Changed ID: 152531440 'Deschutes River meets Columbia River Wasco'
-Changed  ID: 120263708 ID: 29892899 ID: 190850259 ID: 184736637 ID: 124071050  ID: 130121659 ID: 171859632 ID: 246991535 ID: 171859634 ID: 16445210 ID: 54704939 ID: 15649456 'Deschutes County Smith Rock'
+Changed  ID: 120263708 ID: 29892899 ID: 190850259 ID: 184736637 ID: 124071050  ID: 130121659 ID: 171859632 ID: 246991535 ID: 171859634 ID: 16445210 ID: 54704939 ID: 15649456 id: 8403772 id:33462124 id:56910122 id: 189684406 id:163857425 'Deschutes County Smith Rock'
 Changed ID: 29365099 'Wikiup Reservoir Deschutes County'
 Changed ID: 180852008 ID: 82150453 ID: 254737742 'Black Butte Deschutes County'
 Changed ID: 13060258 ID: 18920259 ID: 14330433 ID: 66639593 ID: 42293793 ID: 57096803  ID: 177453327  ID: 80560662 ID: 56071700   Lincoln County Oregon Coast
@@ -181,12 +181,31 @@ Changed ID: 26954695 ID: 35353473  'Columbia River St. Helens'
 Changed ID: 176913641 ID: 133816845 ID:137574550 ID: 98445685 ID: 34948230 ID: 103501195 ID: 103501196 ID: 103501197  ID: 219145507  ID: 191061375 ID: 96190268  ID: 133817018 ID:145372612 ID: 134223298 ID: 138196257 ID: 137196267 ID: 170062636 ID: 203868553 'Greenway Park Beaverton'
 Changed Id: 147072018 'Metzger'
 Changed Id: 152083495 'Beavercreek'
+Changed Id: 148641299 'Sunnyside Park Sweet home'
+Changed Id: 17284626 'Detroit Lake'
+Changed Id: 148394334 'Oxbow Park Sandy River'
+Changed Id: 56989583 'Sandy River Corbett'
+Changed Id: 189926890 'Grand Butte Reservoir Gresham'
+Changed Id: 90426933 ID: 77182012 'Sandy River Dabney Park'
+Changed Id: 41044742 'Salish Ponds Park Fairview'
+Changed Id: 42127309 'Sandy River Delta'
+Changed Id: 138453234 ID: 138507933 'Columbia River Gary Island'
+Changed Id: 71663875 'Blue Lake Park Portland'
+Changed Id: 148040707 'Company Lake Columbia River'
+
+
+
+
+
+
 
   
 # Found and deleted these entries:
 -Deleted record (id: 152442844, id: 259930834) because it was a repeat
 -Deleted one record (id: 97100855) because incorrect location/ location could not be verified.
 -Deleted records (id: 29011942, id:4446353) because they were in Washington State.
+-Deleted Id: 5954439 because cannot confirm any signs of otter
+
 
 
 DELETE FROM otter_data 
