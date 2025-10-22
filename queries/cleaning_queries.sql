@@ -96,7 +96,7 @@ Changed 'Portland Airport'  id: 101730628
 Changed  Id: 109107408 'columbia slough by smith and bybee lake'
 Changed  Id: 4924803  id: 19371200        'willamette river NW industrial district'
 Changed Id: 98754064 id: 70976100 'willamette sauvie island near wapato bridge'
-Changed  Id: 9042518, id: 9321906 'columbia sauvie island near sturgeon lake'
+Changed  ID: 9042518, ID: 9321906, ID: 4375165 'Columbia Sauvie Island near Sturgeon Lake'
 Changed  Id: 9788640 'Force lake Heron Lakes Golf Course'
 Changed  Id: 21787694  'NE portland Columbia Slough near Airport way'
 Changed Id: 30462187  id: 93288240  id:94078805  'N Portland Columbia Slough near Heron Lakes Golf Course'
@@ -104,7 +104,8 @@ Changed Id: 36473452  id: 101423037  id: 137832554 id: 143060344  id: 152431308 
 Changed Id: 54576418  'Broughton Beach Portland Airport'
 Changed  Id: 61629170 'Commonwealth Lake Cedar Hills'
 Changed  Id: 63221403 id: 101065709 'Reed Lake Portland'
-Changed Id: 66615128  id: 71346783 id: 142632089  'Smith and Bybee Lake'
+Changed Id: 66615128  id: 71346783 id: 142632089 id: 39672490 
+  'Smith and Bybee Lake'
 Changed Id: 88888697  id: 140324586 id: 141028926  id: 195294869  'Columbia River Hayden Island'
 Changed Id: 93109885 'Metzger Slough'
 Changed Id: 143375277 'Sellwood Oaksbottom Portland'
@@ -162,16 +163,30 @@ Changed  ID: 120263708 ID: 29892899 ID: 190850259 ID: 184736637 ID: 124071050  I
 Changed ID: 29365099 'Wikiup Reservoir Deschutes County'
 Changed ID: 180852008 ID: 82150453 ID: 254737742 'Black Butte Deschutes County'
 Changed ID: 13060258 ID: 18920259 ID: 14330433 ID: 66639593 ID: 42293793 ID: 57096803  ID: 177453327  ID: 80560662 ID: 56071700   Lincoln County Oregon Coast
-Changed ID: 16159493 Yachats Oregon Coast
-Changed  ID: 204305030 ID: 34050721 ID:12960303 ID: 129296033   Beaver Creek Lincoln Country Oregon Coast
-
+Changed ID: 16159493 'Yachats Oregon Coast'
+Changed  ID: 204305030 ID: 34050721 ID:12960303 ID: 129296033   'Beaver Creek Lincoln Country Oregon Coast'
+Changed ID: 94034593  ID: 33786157 ID: 94650908  'Crystal Springs Rhododendron Garden Portland'
+Changed ID: 101975389 ID: 40109624 'Jackson Creek Scappoose'
+Changed ID: 94263910 ID: 72001984  ID: 119969409  'Pond by millar park Scappoose'
+Changed ID: 65915572  'Dawson Creek Hillsboro'
+Changed ID: 181867769 'Jackson Bottom Wetlands Hillsboro'
+Changed ID: 89934236  'Tualatin River National Wildlife Refuge Sherwood'
+Changed ID: 96909304 'Rock Creek Sherwood'
+Changed ID: 188807081 'Scappoose Bay'
+Changed ID: 74007710 'Columbia River near Deer Island'
+Changed ID: 4006597 'Sturgeon Lake Sauvie Island'
+Changed ID: 41448914 'Dalton Lake St Helens near Columbia River'
+Changed ID: 25805232 'Summer Creek Tigard'
+Changed ID: 26954695 ID: 35353473  'Columbia River St. Helens'
+Changed ID: 176913641 ID: 133816845 ID:137574550 ID: 98445685 ID: 34948230 ID: 103501195 ID: 103501196 ID: 103501197  ID: 219145507  ID: 191061375 ID: 96190268  ID: 133817018 ID:145372612 ID: 134223298 ID: 138196257 ID: 137196267 ID: 170062636 ID: 203868553 'Greenway Park Beaverton'
+Changed Id: 147072018 'Metzger'
+Changed Id: 152083495 'Beavercreek'
 
   
-# Found and deleted a few repeat entries:
--Deleted one record (id 152442844) because it was a repeat
+# Found and deleted these entries:
+-Deleted record (id: 152442844, id: 259930834) because it was a repeat
 -Deleted one record (id: 97100855) because incorrect location/ location could not be verified.
--Deleted record (id: 29011942) because it was in Washington State.
--Deleted record (id: 259930834) because repeat record
+-Deleted records (id: 29011942, id:4446353) because they were in Washington State.
 
 
 DELETE FROM otter_data 
