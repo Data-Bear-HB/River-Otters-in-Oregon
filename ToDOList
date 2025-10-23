@@ -1,0 +1,8 @@
+# Update general_location for every row to give general location
+# Search a count of each entry of general_location
+# Update new column from observed_on_a_string to time of day (morning, afternoon, evening)
+# create a map visual
+# create bar chart for top highest sightings
+# in Tableau create a location/user_id/time_of_day/number_of_sightings
+# create an accessible story in Google slides for a presentation
+# schedule a presentation day :)
