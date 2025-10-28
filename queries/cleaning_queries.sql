@@ -229,43 +229,40 @@ Changed Id: 66409027  186051766  17977571 24537391 156181158  104668748 14482634
 Changed Id: 249552623   252531354 'Bend'
 Changed Id: 137037360 137111001 139274117  'Springfield'
 Changed Id: 8796960 'Alder Lake Coast'
-
-  -------------------------------
-  Change id: 157610907  to ‘Camp Josephine Selma’
-Change id: 1234511 ‘Bear Creek Metford’
-Change id: 14402513 ‘Cape Blanco Oregon Coast’
-Change id: 4840694 id: 4848737 ‘Park Lake Roseburg’
-Change id 143475473 ‘Davis Lake Deschutes County’
-Change id: 33855994 ‘Camp Creek Scottsburg’
-Change id: 157915900 id: 167130317 umpqua river Scottsburg
-Change id: 89023003 ‘Silcoos River Oregon Coast’
-Change id: 26191801 id: 139665569 ‘Juniper Canyon Crook county’
-Change id: 145117715 ‘Paulina Crook County’
-Change id: 184608691 id: 186101512 ‘Fern Ridge Lake’
-Change id: 19791053 ‘Drake Creek Shotgun Ranch’
-Change id: 140512589 id: 7549346  ‘Cape Creek Cove Coast’
-Change id 131849442 ‘Carl Washburne State Park Coast’
-Change id: 56255425 ‘Crook County’
-Change di: 73443902 ‘Three forks Malhuer County’
-Change id: 174034666 id: 135206153 id: 147316418  ‘Near Tokatee Creek Coast’
- Change id: 103573813 id: 37574032 id: 125877126  ‘Powell Butte’
-Delete entry  id:305814105 because repeat
-Change id: 305814105 id: 21127968  ‘near Bob Creek Coast’
- Change: 259001307 Neptune State Park
-Change: 37575905 id: 174786332  ‘Near Redmond’
-Change: 191872474 ‘Aspen Lakes Golf Course near Redmond’
-Change: 112523021 ‘Yachats State Park’
-Change id: 18628753 ‘Yachats River Yachats’
-Change id: 128087649 ‘Willamette River near Monroe’
-Change id: 83623164 id: 150930215 id: 95992096 id: 173120469 id: 96033132 id: 115811761 id: 124633453 id: 181998708  ‘near Smith Rock Park’
-Change id: 111158957 near Terrebonne
-Change id: 117913234 near Black Butte Ranch
-Change id: 107992268 William Finely Nature Refuge
+Changed id: 157610907  'Camp Josephine Selma'
+Changed id: 1234511 'Bear Creek Metford'
+Changed id: 14402513 'Cape Blanco Oregon Coast'
+Changed id: 4840694 id: 4848737 'Park Lake Roseburg'
+Changed id 143475473 'Davis Lake Deschutes County'
+Changed id: 33855994 'Camp Creek Scottsburg'
+Changed id: 157915900 id: 167130317 'Umpqua River Scottsburg'
+Changed id: 89023003 'Silcoos River Oregon Coast'
+Changed id: 26191801 id: 139665569 'Juniper Canyon Crook county'
+Changed id: 145117715 'Paulina Crook County'
+Changed id: 184608691 id: 186101512 'Fern Ridge Lake'
+Changed id: 19791053 'Drake Creek Shotgun Ranch'
+Changed id: 140512589 id: 7549346  'Cape Creek Cove Coast'
+Changed id 131849442 'Carl Washburne State Park Coast'
+Changed id: 56255425 'Crook County'
+Changed id: 73443902 'Three forks Malhuer County'
+Changed id: 174034666 id: 135206153 id: 147316418  'Near Tokatee Creek Coast'
+Changed id: 103573813 id: 37574032 id: 125877126  'Powell Butte'
+Changed id: 305814105 id: 21127968  'near Bob Creek Coast'
+Changed: 259001307 'Neptune State Park'
+Changed: 37575905 id: 174786332  ‘Near Redmond’
+Changed: 191872474 'Aspen Lakes Golf Course near Redmond'
+Changed: 112523021 'Yachats State Park'
+Changed id: 18628753 'Yachats River Yachats'
+Changed id: 128087649 'Willamette River near Monroe'
+Changed id: 83623164 id: 150930215 id: 95992096 id: 173120469 id: 96033132 id: 115811761 id: 124633453 id: 181998708  'near Smith Rock Park'
+Changed id: 111158957 'near Terrebonne'
+Changed id: 117913234 'near Black Butte Ranch'
+Change id: 107992268 'William Finely Nature Refuge'
 
 
   
 # Found and deleted these entries:
--Deleted record (id: 152442844, id: 259930834 id: 136816528 ) because a repeat record
+-Deleted record (id: 152442844, id: 259930834 id: 136816528 id:305814105) because a repeat record
 -Deleted one record (id: 97100855) because incorrect location/ location could not be verified.
 -Deleted records (id: 29011942, id:4446353) because they were in Washington State.
 -Deleted Id: 5954439 because cannot confirm any signs of otter
