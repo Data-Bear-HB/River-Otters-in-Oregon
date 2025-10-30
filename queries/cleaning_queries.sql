@@ -299,7 +299,7 @@ Changed id = 155245271 'Forest Grove'
 
   
 # Found and deleted these entries:
--Deleted record (id: 152442844, id: 259930834, id: 136816528, id:305814105, id: 98573257, id: 155968421, id: 152098226) because a repeat record
+-Deleted record (id: 152442844, id: 259930834, id: 136816528, id:305814105, id: 98573257, id: 155968421, id: 152098226,) because a repeat record
 -Deleted one record (id: 97100855) because incorrect location/ location could not be verified.
 -Deleted records (id: 29011942, id:4446353) because they were in Washington State.
 -Deleted Id: 5954439 because cannot confirm any signs of otter
