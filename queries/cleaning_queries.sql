@@ -343,4 +343,11 @@ Changed id:69174296 'Cascade Locks'
 DELETE FROM otter_data 
   WHERE id = 29011942 OR id = 97100855 OR id = 152442844
 
+_________________________________________
+#To conglomerate locations with Warrenton/Astoria
+UPDATE otter_data
+SET general_location = 'Warrenton/Astoria'
+WHERE general_location = 'Lewis and Clark near Warrenton and Astoria' 
+OR general_location = 'River near Astoria'
+
 
