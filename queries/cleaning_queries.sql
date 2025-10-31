@@ -296,11 +296,45 @@ Changed id = 4024691  'Sand Lake'
 Changed id = 47169864  'John Day River Cottonwood Canyon State Park'
   Changed id = 9261628 'Henry Hagg Lake'
 Changed id = 155245271 'Forest Grove'
+  Changed Id: 155968417 'Unity Reservoir'
+ ChangedId: 23000340 'Toledo'
+Changed id : 188480328 'Yaquina Bay Newport'
+Changed id: 194607478 'Forest Grove'
+Changed id: 104066176 id: 104066176 'Lower Deschutes Wildlife Area'
+Changed id: 178195618 id: 137285895 'Wallowa River Wallowa' 
+Changed id 21669011 'Deschutes River Recreational Area'
+Changed: id 190551283 'Columbia River Celilo Park'
+Changed 103400950 id:8701580 id:5246118  id: 140326593 'Nehalem Bay'
+Changed 83892663 'Nehalem River Tillamook County'
+Changed 62754580 id:106030294  id:20871506 id:97183089  id:103400950 'Nehalem River Nahalem Park'
+Changed id: 62450618 id:186900895 id:172270469 id:12464772  'Warrenton Fort Stevens State Park'
+Changed id:104286036 id:128686591  id:63570447  id:5104329 id:52753742  id:89790396  id: 109307904  'Seaside'
+Changed id:24284986 'Columbia River Boardman'
+Changed id:106287578  id:92870665  'Umatilla National Wildlife Refuge'
+Changed id:63220172 'Grand Ronde River Troy'
+Changed id: 182120431 'Cannon Beach'
+Changed id:71398637 id:9048685   'Vernonia Lake Vernonia'
+Changed id:70127987 id:187047758   id:167940672   id:152879483   id:151232602  id:41571536 id:52441024   id:151232597  id:69687179 id: 74426781  id:74426783 id:109950318  id:106888984  id:100661080  id:106456981 'Columbia River Svensen Island'
+Changed id:166128498  id:166138041 id:128474585 'Manzanita Beach' 
+Changed id:19424765 id:42436336  'Lewis and Clark River near Warrenton'
+Changed id:17976881 id:38201808  'Salisbury Slough Columbia River'
+Changed id:170210255 'Eola Creek near Cannon Beach'
+Changed id:102143305 'Imnaha River'
+Changed id:4914685 'Tucker Creek Clatsop County'
+Changed id:24619499, id:9267093, id:10478634, id:12965192,  id:144194622,  id:147292703,  'near Warrenton'
+Changed id:25413623, id:98487001, id:5952021, id:66708921 'River near Astoria'
+Changed id:53673133, id:22035690,  id:30854062,  id:40425663 'Lewis and Clark River'
+Changed id:124938137 'near Seaside'
+Changed id:57084991 'Bay near Gearhart'
+Changed id:140723614, id:147292703, id:193764053  'Sunset Beach near Warrenton'
+Changed id:16431529 'Swash Lake near Fort Stevens'
+Changed id:69174296 'Cascade Locks'
+
 
   
 # Found and deleted these entries:
--Deleted record (id: 152442844, id: 259930834, id: 136816528, id:305814105, id: 98573257, id: 155968421, id: 152098226,) because a repeat record
--Deleted one record (id: 97100855) because incorrect location/ location could not be verified.
+-Deleted record (id: 152442844, id: 259930834, id: 136816528, id:305814105, id: 98573257, id: 155968421, id: 152098226, id:178195619, id:187047757,  id:151232607, id:151232600  id:151232595, id:151232594, id:9048686) because a repeat record
+-Deleted one record (id: 97100855, id:92676713 ) because incorrect location/ location could not be verified.
 -Deleted records (id: 29011942, id:4446353) because they were in Washington State.
 -Deleted Id: 5954439 because cannot confirm any signs of otter
 
