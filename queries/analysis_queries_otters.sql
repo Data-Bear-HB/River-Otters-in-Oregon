@@ -10,12 +10,10 @@ Once the data cleaning is done, I will re-calculate with statisical significance
 
 # 1. What *general areas* in Oregon have the most sighting?
 
-SELECT general_location, COUNT(*) AS count
+SELECT general_location, COUNT(*) as frequency
 FROM otter_data
-WHERE general_location IS NOT NULL
 GROUP BY general_location
-ORDER BY count DESC
-LIMIT 3;
+ORDER BY frequency DESC;
 
 Data output:
   
