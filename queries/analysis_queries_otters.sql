@@ -1,38 +1,33 @@
 #RIVER OTTERS OF OREGON ANALYSIS QUERIES#
-##
+
 -Using SQLPostGre 
+
 -iNaturalist data
+
 -verified observations of river otters 
+
 -in Oregon.
 
-Note: These are initial findings partially cleaned data. 
-Once the data cleaning is done, I will re-calculate with statisical significance. 
-
-# 1. What *general areas* in Oregon have the most sighting?
+#QUESTION 1. What *general areas* in Oregon have the most sighting?
 
 SELECT general_location, COUNT(*) as frequency
 FROM otter_data
 GROUP BY general_location
-ORDER BY frequency DESC;
+ORDER BY frequency DESC
+  LIMIT 5;
 
-Data output:
+Data output: (general_location, number of sightings)
   
-  'Lewis and Clark Park near Warrenton Astoria',  18
-  'Warrenton/Astoria',  13
-  'Deschutes County Smith Rock', 12
+  'Fort Stevens/ Hammond/ Astoria/ Warrenton',  61
+  'Deschutes County Smith Rock,  25
+  'Eugene', 24
+  'Greenway Park Beaverton' 18
+  'Columbia River Svensen Island' 15
 
-From this I can see that multiple records in general_location mention "Warrenton" or "Astoria" so I created a new query that would encompass those words:
 
-  SELECT general_location
-FROM otter_data
-WHERE general_location IS NOT NULL
-AND general_location ILIKE '%warrenton%'
-OR general_location ILIKE '%astoria%';
 
-Output: 50 records for [Warrenton/Astoria](https://maps.app.goo.gl/xGbHNFW8ChW9577Q8). Currently highest number of records.
+Output:
 
-  **Note**: These "twin cities" are essentially the same area of Oregon, on either side of where the Lewis and Clark River meets the Pacific Ocean.
-  
 
 ##  (INSERT HERE DASHBOARD FOR LOCATION CROSS REFERENCED WITH SEASON_YEAR) ##
 
