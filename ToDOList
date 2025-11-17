@@ -1,4 +1,4 @@
-# Update general_location for every row to give general location
+DONE -Update general_location for every row to give general location
 # Search a count of each entry of general_location
 # Update new column from observed_on_a_string to time of day (morning, afternoon, evening)
 # create a map visual
