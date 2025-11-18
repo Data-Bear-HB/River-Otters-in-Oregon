@@ -1,0 +1,13 @@
+DONE -Update general_location for every row to give general location
+DONE Search a count of each entry of general_location
+DONE DELETE body_of_water column, taxon_id, uuid, place_town_name, species_guess, common_name
+DONE Update new column from observed_on_string to (morning, afternoon, evening) AS time_of_day
+# create bar chart for top highest sightings locations
+
+# create a map visual (Somehow bigger otters at each location for several sightings??)
+# create top 5 places to see otters within an hour of portland
+# in Tableau create a location/user_id/time_of_day/number_of_sightings
+# create an accessible story in Google slides for a presentation
+# schedule a presentation day :)
+# give presentation
+# post presentation to Linkedin
