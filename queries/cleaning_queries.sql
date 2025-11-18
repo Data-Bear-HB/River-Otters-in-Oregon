@@ -350,4 +350,21 @@ SET general_location = 'Warrenton/Astoria'
 WHERE general_location = 'Lewis and Clark near Warrenton and Astoria' 
 OR general_location = 'River near Astoria'
 
+_______________________________________________
+#To add a new column and add time of day
 
+ALTER TABLE otter_data
+ADD COLUMN time_of_day VARCHAR(20);
+
+#To add the times of day to the column from time_observed_on
+
+UPDATE otter_data
+SET time_of_day = CASE
+    WHEN EXTRACT(HOUR FROM time_observed_at::timestamp) >= 5 
+         AND EXTRACT(HOUR FROM time_observed_at::timestamp) < 12 THEN 'early morning'
+    WHEN EXTRACT(HOUR FROM time_observed_at::timestamp) >= 12 
+         AND EXTRACT(HOUR FROM time_observed_at::timestamp) < 17 THEN 'afternoon'
+    WHEN EXTRACT(HOUR FROM time_observed_at::timestamp) >= 17 
+         AND EXTRACT(HOUR FROM time_observed_at::timestamp) < 21 THEN 'evening'
+    ELSE 'night'
+END;
