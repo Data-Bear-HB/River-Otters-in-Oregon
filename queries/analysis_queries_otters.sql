@@ -63,3 +63,5 @@ ORDER BY count DESC
 "Fall, 2021"	36
 "Fall, 2023"	35
 "Summer, 2023"	30
+
+#  5. What time of day are most of the sightings?
