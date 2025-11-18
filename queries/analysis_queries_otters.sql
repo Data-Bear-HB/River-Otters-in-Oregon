@@ -26,10 +26,7 @@ Data output: (general_location, number of sightings)
 
 
 
-Output:
-
-
-##  (INSERT HERE DASHBOARD FOR LOCATION CROSS REFERENCED WITH SEASON_YEAR) ##
+##  (INSERT HERE: link to DASHBOARD FOR LOCATION CROSS REFERENCED WITH SEASON_YEAR) ##
 
 # 2. What time of year are the otters most likely to be observed?
   
@@ -64,4 +61,22 @@ ORDER BY count DESC
 "Fall, 2023"	35
 "Summer, 2023"	30
 
-#  5. What time of day are most of the sightings?
+#  5. What time of day are most of the sightings? Include NULL values for time_of_day
+
+SELECT 
+    CASE 
+        WHEN time_observed_at IS NULL THEN 'NULL (no time)'
+        ELSE time_of_day 
+    END AS time_of_day, 
+    COUNT(*) AS frequency
+FROM otter_data
+GROUP BY time_observed_at IS NULL, time_of_day
+ORDER BY frequency DESC;
+
+output: 
+"night"	212
+"evening"	194
+"afternoon"	141
+"NULL (no time)"	18
+"early morning"	17
+
