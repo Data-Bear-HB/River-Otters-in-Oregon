@@ -367,4 +367,5 @@ SET time_of_day = CASE
     WHEN EXTRACT(HOUR FROM time_observed_at::timestamp) >= 17 
          AND EXTRACT(HOUR FROM time_observed_at::timestamp) < 21 THEN 'evening'
     ELSE 'night'
-END;
+END
+WHERE time_observed IS NOT NULL;
