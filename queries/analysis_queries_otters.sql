@@ -74,9 +74,12 @@ GROUP BY time_observed_at IS NULL, time_of_day
 ORDER BY frequency DESC;
 
 output: 
-"night"	212
-"evening"	194
-"afternoon"	141
-"NULL (no time)"	18
-"early morning"	17
+"afternoon"	210
+"morning"	164
+"early morning"	103
+"evening"	61
+"night"	26
+"NULL (no time recorded)"	18
+
+# 5 Answer: Though it would seems that the majority of the sightings are in the afternoon and morning, remember that this is just "when people have seen them", rather than "when otters can be seen".
 
