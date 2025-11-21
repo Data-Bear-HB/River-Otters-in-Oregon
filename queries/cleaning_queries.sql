@@ -360,12 +360,14 @@ ADD COLUMN time_of_day VARCHAR(20);
 
 UPDATE otter_data
 SET time_of_day = CASE
-    WHEN EXTRACT(HOUR FROM observed_on_string::timestamp) >= 5 
-         AND EXTRACT(HOUR FROM observed_on_string::timestamp) < 12 THEN 'early morning'
-    WHEN EXTRACT(HOUR FROM observed_on_string::timestamp) >= 12 
-         AND EXTRACT(HOUR FROM observed_on_string::timestamp) < 17 THEN 'afternoon'
-    WHEN EXTRACT(HOUR FROM observed_on_string::timestamp) >= 17 
-         AND EXTRACT(HOUR FROM observed_on_string::timestamp) < 21 THEN 'evening'
+    WHEN EXTRACT(HOUR FROM (time_observed_at::timestamp AT TIME ZONE 'America/Los_Angeles')) >= 5 
+         AND EXTRACT(HOUR FROM (time_observed_at::timestamp AT TIME ZONE 'America/Los_Angeles')) < 9 THEN 'early morning'
+    WHEN EXTRACT(HOUR FROM (time_observed_at::timestamp AT TIME ZONE 'America/Los_Angeles')) >= 9 
+         AND EXTRACT(HOUR FROM (time_observed_at::timestamp AT TIME ZONE 'America/Los_Angeles')) < 12 THEN 'morning'
+    WHEN EXTRACT(HOUR FROM (time_observed_at::timestamp AT TIME ZONE 'America/Los_Angeles')) >= 12 
+         AND EXTRACT(HOUR FROM (time_observed_at::timestamp AT TIME ZONE 'America/Los_Angeles')) < 17 THEN 'afternoon'
+    WHEN EXTRACT(HOUR FROM (time_observed_at::timestamp AT TIME ZONE 'America/Los_Angeles')) >= 17 
+         AND EXTRACT(HOUR FROM (time_observed_at::timestamp AT TIME ZONE 'America/Los_Angeles')) < 21 THEN 'evening'
     ELSE 'night'
 END
-WHERE observed_on_string IS NOT NULL;
+WHERE time_observed_at IS NOT NULL;;
