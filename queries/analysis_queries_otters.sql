@@ -45,7 +45,7 @@ Data output:
   **Answer: Fall is a clear outlier with a much higher number of observations.**
 
 
-# 4. Seasonality: What *season* had the highest number of records/observations?
+# 4. Seasonality: Which *season in the 10 year period* had the highest number of records/observations?
   
  SELECT season_year, COUNT(*) AS count
 FROM otter_data
@@ -81,5 +81,5 @@ output:
 "night"	26
 "NULL (no time recorded)"	18
 
-# 5 Answer: Though it would seems that the majority of the sightings are in the afternoon and morning, remember that this is just "when people have seen them", rather than "when otters can be seen".
+# 5 Answer: Though it would seems that the majority of the sightings are in the afternoon and morning, remember that this is just "when people have recorded an obserservation", rather than "when otters can be seen".
 
