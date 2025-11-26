@@ -1,13 +1,11 @@
+# Tableau: create bar chart for top highest sightings locations
 
-###### URGENT (before anything else) change time_of_day to observed_on_string data (currently it's from time_observed_at)
-
-# create bar chart for top highest sightings locations
 # create a map visual (Somehow bigger otters at each location for several sightings??)
 # create top 5 places to see otters within an hour of portland
 # in Tableau create a location/user_id/time_of_day/number_of_sightings
 # create an accessible story in Google slides for a presentation
 # schedule a presentation day :)
-# give presentation
+# give presentation with video of self in corner
 # post presentation to Linkedin
 
 DONE Search a count of each entry of general_location
