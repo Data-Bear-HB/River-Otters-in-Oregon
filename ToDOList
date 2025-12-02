@@ -1,5 +1,5 @@
 # Tableau: create bar chart for top highest sightings locations
-    #highest locations and times screenshot uploads
+      # create visual for highest times of day
 # create a map visual (Somehow bigger otters at each location for several sightings??)
 # create top 5 places to see otters within an hour of portland
 
@@ -9,6 +9,7 @@
 # give presentation with video of self in corner
 # post presentation to Linkedin
 
+DONE added highest locations and times screenshot uploads
 DONE Search a count of each entry of general_location
 DONE DELETE body_of_water column, taxon_id, uuid, place_town_name, species_guess, common_name
 DONE Update new column from observed_on_string to (morning, afternoon, evening) AS time_of_day
