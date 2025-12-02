@@ -1,12 +1,18 @@
-# Tableau: create bar chart for top highest sightings locations
-      # create visual for highest times of day
-# create a map visual (Somehow bigger otters at each location for several sightings??)
-# create top 5 places to see otters within an hour of portland
+# Tableau: 
+      # create bar chart for top highest sightings locations (use the cute png otters)
+       # create visual for highest times of day
+      # create a map visual for NEAR portland
+            # create top 5 places to see otters within an hour of portland
+            # visual idea: add a circle around 
+      # in Tableau create a location/user_id/time_of_day/number_of_sightings Dashboard others can use 
 
-# in Tableau create a location/user_id/time_of_day/number_of_sightings
-# create an accessible story in Google slides for a presentation
-# schedule a presentation day :)
-# give presentation with video of self in corner
+# SLIDE SHOW:
+      #create an accessible story in Google slides for a presentation
+            #  focus on the questions and following the mystery/storytelling      
+
+# schedule a presentation day NYE afternoon??
+
+# after live presentation, record  presentation with video of self in corner
 # post presentation to Linkedin
 
 DONE added highest locations and times screenshot uploads
