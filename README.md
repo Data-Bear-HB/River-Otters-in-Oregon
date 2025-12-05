@@ -24,18 +24,20 @@ The records in [this otter database](data/cleaned) each have an image url, simil
 
 -Create a dashboard and easy charts to give helpful insights.
 
+Note: iNaturalist [*disclaimer*](https://www.inaturalist.org/taxa/41777-Lontra-canadensis) about the seasonal data, location sightings, and time of day information: *"Keep in mind that these are numbers of observations, so they are influenced both by when the organism can be observed and when people bother to observe them."* **Therefore, we cannot conclude that more otters are more present at certain times of year.**
+
 
 ##**Project Findings**##
 
    a. **"Where in Oregon are the most sightings of river otters (or otter signs)?"**
 
-   Answer: (Current answer)_The Warrenton Astoria Area ___
+   Answer: The Warrenton Astoria Area
   
   b. What time of year do most Oregon naturalists see river otters?"**
  
   Answer: Fall.
 
-  NOTE: iNaturalist [*disclaimer*](https://www.inaturalist.org/taxa/41777-Lontra-canadensis) about the seasonal data: *"Keep in mind that these are numbers of observations, so they are influenced both by when the organism can be observed and when people bother to observe them."* **Therefore, we cannot conclude that more otters are more present at certain times of year.**
+  (Insert seasonal chart)
 
 c. (INSERT DASHBOARD LINK)
 
@@ -48,17 +50,19 @@ d. Other insights:
    -Examination of otter scat photos (INSERT PHOTO HERE) show an abundant crayfish shells, indicating crayfish are a common river otter food.
 
 c.**IN SUMMARY**
-**Actionable information**: If you're looking to observe river otters in Oregon, many were spotted in these areas:
+**Actionable information**: 
 
-Portland Area: Whitaker Ponds, Bybee Lake, Hayden Island, and Force Lake (a pond in Heron Lakes Golf Course).
+If you're looking to observe river otters in Oregon, many were spotted in the following areas. We can surmise from the number of sightings across several years that these locations have active populations:
 
-Coast Populations:
+-Portland Area: Whitaker Ponds, Bybee Lake, Hayden Island, Force Lake (a pond in Heron Lakes Golf Course), Willamette River NW Industrial District.
 
-Rivers with many sightings: Deschutes, Columbia, Rogue
+-Coast Populations: All along the Oregon coast, but especially at Bear Creek and Fort Stevens State Park.
 
-Southern Oregon:
+-Rivers with many sightings: Deschutes, Columbia, Rogue
 
-Central and Eastern Oregon:
+-Southern Oregon: Upper Kalamath Lake, Winchuck River on the Coast
+
+-Central and Eastern Oregon: Unity Reservoir, SunRiver, Wikiup Reservoir
 
 
 
