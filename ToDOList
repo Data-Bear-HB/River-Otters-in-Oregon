@@ -1,8 +1,5 @@
-#aggregate data for similar titles (obvious on the map)
 
 # Tableau: 
-      # create a map visual for NEAR portland    # create top 5 places to see otters within an hour of portland
-            # visual idea: add a circle around 
       # in Tableau create a location/user_id/time_of_day/number_of_sightings Dashboard others can use 
 
 # projections for the future.. what will 2026 or 2027 look like for otter sightings?
@@ -19,7 +16,7 @@
 # after live presentation, record  presentation with video of self in corner
 # post presentation to Linkedin
 
-
+ DONE create a map visual for NEAR portland    # create top 5 places to see otters within an hour of portland
 DONE Send out invitations for Dec 31st (As soon as library approves room)
 DONE create visual for highest times of day
 DONE map of all sightings (added to repo)
